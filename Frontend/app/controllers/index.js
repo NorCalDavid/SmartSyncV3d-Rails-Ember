@@ -1,5 +1,5 @@
-import Ember from 'ember';
+SmartSync.IndexController = Ember.Controller.extend({
+   needs: ['application'],
 
-export default Ember.Controller.extend({
-
+   isAuthenticated: Em.computed.alias('controllers.application.isAuthenticated'),
 });
