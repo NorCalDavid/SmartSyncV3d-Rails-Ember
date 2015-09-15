@@ -1,0 +1,50 @@
+<h2>Register</h2>
+
+<form {{action "createUser" on="submit"}}>
+   {{#if errorMessage}}
+      <div class="alert alert-error">{{errorMessage}}</div>
+   {{/if}}
+   <div {{bind-attr class=":control-group errors.name:error"}}>
+   <div class="controls">
+      <label>Full Name</label>
+      {{input type="text" value=name placeholder="Full Name"}}
+      <small class="below help-inline">{{errors.name}}</small>
+   </div>
+   </div>
+
+   <div {{bind-attr class=":control-group errors.email:error"}}>
+   <div class="controls">
+      <label>Email Address</label>
+      {{input type="email" value=email placeholder="Email Address"}}
+      <small class="below help-inline">{{errors.email}}</small>
+   </div>
+   </div>
+
+   <div {{bind-attr class=":control-group errors.username:error"}}>
+   <div class="controls">
+      <label>Username</label>
+      {{input type="text" value=username placeholder="Username"}}
+      <small class="below help-inline">{{errors.username}}</small>
+   </div>
+   </div>
+
+   <div {{bind-attr class=":control-group errors.password:error"}}>
+   <div class="controls">
+      <label>Password</label>
+      {{input type="password" value=password placeholder="Password"}}
+      <small class="below help-inline">{{errors.password}}</small>
+   </div>
+   </div>
+
+   <div {{bind-attr class=":control-group errors.password_confirmation:error"}}>
+   <div class="controls">
+      <label>Confirm Password</label>
+      {{input type="password" value=password_confirmation placeholder="Confirm Password"}}
+      <small class="below help-inline">{{errors.password_confirmation}}</small>
+   </div>
+   </div>
+
+   <br>
+   <button type="submit">Submit</button>
+</form>
+

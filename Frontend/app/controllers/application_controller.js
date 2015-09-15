@@ -1,4 +1,4 @@
-SmartSync.ApplicationController = Ember.Controller.extend({
+SmartSync.SmartSynclicationController = Ember.Controller.extend({
    currentUser: function() {
       return SmartSync.AuthManager.get('apiKey.user')
    }.property('SmartSync.AuthManager.apiKey'),

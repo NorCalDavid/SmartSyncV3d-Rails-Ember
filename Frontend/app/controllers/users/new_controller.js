@@ -1,8 +1,7 @@
 SmartSync.UsersNewController = Ember.Controller.extend({
    errors: {},
    errorMessage: '',
-   reset: function() { this.setProperties({
-                                             errors: {},
+   reset: function() { this.setProperties({  errors: {},
                                              errorMessage: '',
                                              name: '',
                                              email: '',

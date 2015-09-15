@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.0.0",
-  "description": "Small description for frontend goes here",
+  "description": "Ember Frontend for the Smart Sync Application",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -16,7 +16,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "David Uli",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
