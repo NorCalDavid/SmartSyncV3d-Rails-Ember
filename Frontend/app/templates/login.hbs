@@ -1,0 +1,32 @@
+<div class='container-body'>
+  <div class="container-fluid">
+    <div class="page-header">
+      <h1><i class="fa fa-user fa-5x text-primary"></i> User <small>Login</small></h1>
+    </div>
+  </div>
+
+  <form {{action 'authenticate' on='submit'}}>
+    <div class="col-md-7">
+      <legend>
+        <h4><i class="fa fa-chevron-right fa-1x"></i> Login:<small>  Enter your email and password</small></h4>
+      </legend>
+
+      <div class="form-group">
+        <label for='identification' class="small">Email Address (Required)</label>
+        {{input id='identification' placeholder='Email Address' value=identification}}
+        <span class="help-inline"> {{errors.email}} </span>
+      </div>
+      <br>
+
+      <div class="form-group">
+        <label for='password' class="small">Password (Required)</label>
+        {{input id='password' placeholder='Enter Password'
+        type='password' value=password}}
+        <span class="help-inline"> {{errors.password}} </span>
+      </div>
+
+      <button type='submit' class:='btn btn-lg btn-social btn-primary'>Login</button>
+    </div>
+  </form>
+</div>
+
