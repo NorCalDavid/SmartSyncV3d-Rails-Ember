@@ -1,0 +1,20 @@
+source 'https://rubygems.org'
+
+gem 'rails', '4.2.4'
+gem 'pg'
+gem 'sass-rails'
+gem 'jquery-rails'
+gem 'twitter-bootstrap-rails'
+gem 'font-awesome-rails'
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'rspec-rails'
+  gem 'dotenv-rails'
+  gem 'awesome_print'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0'
+end
